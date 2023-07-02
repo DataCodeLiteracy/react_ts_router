@@ -1,4 +1,4 @@
-import { Posts } from '../routes/post'
+import { Posts } from '../ts/posts'
 
 export default function LiItems(posts: Posts) {
   return (

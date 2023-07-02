@@ -8,7 +8,9 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
-        'no-console': ['error', { allow: ['warn', 'error', 'info'] }]
+        'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
+        'no-unused-vars': 'off',
+        'react/react-in-jsx-scope': 'off'
       }
     },
     {

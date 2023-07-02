@@ -1,10 +1,6 @@
-import { PostsDetail } from '../routes/post'
+import { Props } from '../ts/posts'
 import { Link } from 'react-router-dom'
 import { posts } from '../ts/posts'
-
-interface Props {
-  postDetail: PostsDetail
-}
 
 export default function PostsDetailPages({ postDetail }: Props) {
   const currentPostId = postDetail.id

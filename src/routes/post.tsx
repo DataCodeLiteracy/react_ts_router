@@ -2,24 +2,6 @@ import { useParams } from 'react-router-dom'
 import PostsDetailPages from '../components/PostsDetailPages'
 import { postDetail } from '../ts/posts'
 
-export type Posts = {
-  id: number
-  imageUrl: string
-  title: string
-  description: string
-  date: string
-}
-
-export type PostsDetail = {
-  id: number
-  imageUrl: string
-  title: string
-  profileImage: string
-  writer: string
-  date: string
-  contents: string
-}
-
 export default function Post() {
   const { id } = useParams<{ id: string }>()
   const filteredPost = postDetail.filter((detail) => detail.id === Number(id))[0]

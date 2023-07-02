@@ -1,6 +1,24 @@
-import { Posts, PostsDetail } from '../routes/post'
+export type Posts = {
+  id: number
+  imageUrl: string
+  title: string
+  description: string
+  date: string
+}
 
-console.log(1)
+export type PostsDetail = {
+  id: number
+  imageUrl: string
+  title: string
+  profileImage: string
+  writer: string
+  date: string
+  contents: string
+}
+
+export interface Props {
+  postDetail: PostsDetail
+}
 
 export const posts: Array<Posts> = [
   {
