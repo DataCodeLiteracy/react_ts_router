@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import LiItems from "../components/LiItems";
-import { posts } from "../ts/posts";
+import { Link } from 'react-router-dom'
+import LiItems from '../components/LiItems'
+import { posts } from '../ts/posts'
 
 export default function home() {
   return (
@@ -10,22 +10,13 @@ export default function home() {
         <ul className="mt-20">
           {posts.map((post) => (
             <li className="group mb-20" key={post.id}>
-              <Link
-                className="flex flex-col md:flex-row "
-                to={`/post/${post.id}`}
-              >
-                <LiItems
-                  id={post.id}
-                  imageUrl={post.imageUrl}
-                  title={post.title}
-                  description={post.description}
-                  date={post.date}
-                />
+              <Link className="flex flex-col md:flex-row " to={`/post/${post.id}`}>
+                <LiItems id={post.id} imageUrl={post.imageUrl} title={post.title} description={post.description} date={post.date} />
               </Link>
             </li>
           ))}
         </ul>
       </div>
     </div>
-  );
+  )
 }

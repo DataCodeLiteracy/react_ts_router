@@ -42,6 +42,9 @@
     ]
   },
   "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "latest",
     "tailwindcss": "^3.3.2"
   }
 }
