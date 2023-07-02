@@ -13,4 +13,7 @@ yarn start로 실행
 
 ## 기능 시연
 
-![](https://velog.velcdn.com/images/dataliteracy/post/956692e7-5ef1-4db9-aa2b-3ed29fae27d8/image.gif)
+라우팅이 제대로 동작하는지,
+이전, 이후 포스팅 이동이 제대로 동작하는지에 대한 시연
+
+![Jul-02-2023 19-13-03](https://github.com/DataCodeLiteracy/react_ts_router/assets/103319477/029bca05-e5d9-4d08-b746-a05342730037)
